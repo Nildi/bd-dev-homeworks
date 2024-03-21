@@ -39,14 +39,14 @@ https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml
 <br>UPDATE clients
 <br>SET order_id = (
 <br>    CASE last_name
-        WHEN 'Иванов' THEN (SELECT id FROM orders WHERE item_name = 'Книга')
-        WHEN 'Петров' THEN (SELECT id FROM orders WHERE item_name = 'Монитор')
-        WHEN 'Бах' THEN (SELECT id FROM orders WHERE item_name = 'Гитара')
+<br>        WHEN 'Иванов' THEN (SELECT id FROM orders WHERE item_name = 'Книга')
+<br>        WHEN 'Петров' THEN (SELECT id FROM orders WHERE item_name = 'Монитор')
+<br>        WHEN 'Бах' THEN (SELECT id FROM orders WHERE item_name = 'Гитара')
 <br>    END
 <br>)
 <br>WHERE last_name IN ('Иванов', 'Петров', 'Бах');
 
-
+![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.4.1.png)
 <br>SELECT c.*
 <br>FROM clients c
 <br>JOIN orders o ON c.order_id = o.id;
