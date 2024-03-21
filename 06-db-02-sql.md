@@ -23,8 +23,8 @@ volumes:
 
 ![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.2.2.png)
 <br>SELECT grantee, privilege_type
-FROM information_schema.table_privileges
-WHERE table_schema = 'public' AND table_name IN ('orders', 'clients');
+<br>FROM information_schema.table_privileges
+<br>WHERE table_schema = 'public' AND table_name IN ('orders', 'clients');
 
 ![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.2.3.png)
 
