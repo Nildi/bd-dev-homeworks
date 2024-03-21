@@ -1,5 +1,5 @@
 <h3> Задание 1 </h3>
-![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml)
+https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml
 
 <h3> Задание 2 </h3>
 
@@ -16,13 +16,24 @@
 <h3> Задание 3 </h3>
 <br>INSERT INTO orders (наименование, цена)
 <br>VALUES
-<br>   ('Шоколад', 10),
+<br>    ('Шоколад', 10),
 <br>    ('Принтер', 3000),
 <br>    ('Книга', 500),
 <br>    ('Монитор', 7000),
 <br>    ('Гитара', 4000);
+<br>INSERT INTO clients (фамилия, страна_проживания)
+<br>VALUES
+<br>    ('Иванов Иван Иванович', 'USA'),
+<br>    ('Петров Петр Петрович', 'Canada'),
+<br>    ('Иоганн Себастьян Бах', 'Japan'),
+<br>    ('Ронни Джеймс Дио', 'Russia'),
+<br>    ('Ritchie Blackmore', 'Russia');
+
+<br>SELECT COUNT(*) AS orders_count FROM orders;
+<br>SELECT COUNT(*) AS clients_count FROM clients;
 
 
+![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.3.1.png)
 
 <h3> Задание 4 </h3>
 
