@@ -1,21 +1,5 @@
 <h3> Задание 1 </h3>
-<br>version: '3.7'
-<br>
-<br>services:
-<br>  postgres:
-<br>    image: postgres:12
-<br>    restart: always
-<br>    environment:
-<br>      POSTGRES_DB: mydatabase
-<br>      POSTGRES_USER: myuser
-<br>      POSTGRES_PASSWORD: mypassword
-<br>    volumes:
-<br>      - db_data:/var/lib/postgresql/data
-<br>      - db_backups:/backups
-<br>
-<br>volumes:
-<br>  db_data:
-<br>  db_backups:
+![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml)
 
 <h3> Задание 2 </h3>
 
