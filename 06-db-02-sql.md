@@ -53,4 +53,7 @@ https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml
 
 <h3> Задание 5 </h3>
 
+![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.5.1.png)
+
+
 <h3> Задание 6 </h3>
