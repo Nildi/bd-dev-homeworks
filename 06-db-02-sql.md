@@ -1,21 +1,21 @@
 <h3> Задание 1 </h3>
-version: '3.7'
-
-services:
-  postgres:
-    image: postgres:12
-    restart: always
-    environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-    volumes:
-      - db_data:/var/lib/postgresql/data
-      - db_backups:/backups
-
-volumes:
-  db_data:
-  db_backups:
+<br>version: '3.7'
+<br>
+<br>services:
+<br>  postgres:
+<br>    image: postgres:12
+<br>    restart: always
+<br>    environment:
+<br>      POSTGRES_DB: mydatabase
+<br>      POSTGRES_USER: myuser
+<br>      POSTGRES_PASSWORD: mypassword
+<br>    volumes:
+<br>      - db_data:/var/lib/postgresql/data
+<br>      - db_backups:/backups
+<br>
+<br>volumes:
+<br>  db_data:
+<br>  db_backups:
 
 <h3> Задание 2 </h3>
 
@@ -30,6 +30,15 @@ volumes:
 
 
 <h3> Задание 3 </h3>
+<br>INSERT INTO orders (наименование, цена)
+<br>VALUES
+<br>   ('Шоколад', 10),
+<br>    ('Принтер', 3000),
+<br>    ('Книга', 500),
+<br>    ('Монитор', 7000),
+<br>    ('Гитара', 4000);
+
+
 
 <h3> Задание 4 </h3>
 
