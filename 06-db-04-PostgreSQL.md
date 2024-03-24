@@ -14,15 +14,29 @@
 
 
 <h3> Задание 2 </h3>
-<br>SELECT attname, avg_width
-<br>FROM pg_stats
-<br>WHERE tablename = 'orders'
-<br>ORDER BY avg_width DESC
-<br>LIMIT 1;
-<br> attname | avg_width
-<br>---------+-----------
-<br> title   |        16
-<br>(1 row)
+SELECT attname, avg_width
+FROM pg_stats
+WHERE tablename = 'orders'
+ORDER BY avg_width DESC
+LIMIT 1;
+ attname | avg_width
+---------+-----------
+ title   |        16
+(1 row)
+
+    SELECT attname, avg_width
+    FROM pg_stats
+    WHERE tablename = 'orders'
+    ORDER BY avg_width DESC
+    LIMIT 1;
+     attname | avg_width
+     ---------+-----------
+      title   |        16
+      (1 row)
+      
+(1 row)
+      
+(1 row)
 
 
 <h3> Задание 3 </h3>
