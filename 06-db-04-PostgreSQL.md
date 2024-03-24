@@ -19,10 +19,10 @@
 <br>WHERE tablename = 'orders'
 <br>ORDER BY avg_width DESC
 <br>LIMIT 1;
- attname | avg_width
----------+-----------
- title   |        16
-(1 row)
+<br> attname | avg_width
+<br>---------+-----------
+<br> title   |        16
+<br>(1 row)
 
 
 <h3> Задание 3 </h3>
