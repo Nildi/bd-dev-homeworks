@@ -55,5 +55,21 @@ https://github.com/Nildi/bd-dev-homeworks/blob/main/docker-compose.yml
 
 ![alt text](https://github.com/Nildi/bd-dev-homeworks/blob/main/db_hw02.5.1.png)
 
-
+Hash Join указывает на использование хеш-соединения. Hash Cond показывает условие, по которому производится соединение. Seq Scan указывает на последовательное сканирование таблицы. . Cost (cтоимость) и оценка количества rows (строк) могут быть полезными для оптимизации запроса. Filter показывает условие фильтрации.  Каждая строка представляет один шаг выполнения запроса
 <h3> Задание 6 </h3>
+Создание бэкапа и помещение его в volume:
+<br>docker exec -it postgres12 bash
+<br>pg_dump -U admin test_db > /backups/test_db_backup.sql
+<br> Остановка контейнера:
+<br> docker stop postgres12
+<br> Подъем нового контейнера:
+<br>docker run -d \
+  --name test_db \
+  -v /var/lib/docker/volumes/postgres_pg_backups/_data:/backups \
+  -e POSTGRES_DB=test_db \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=1234qwer \
+  postgres:12
+<br> Восстановление БД:
+<br>docker exec -it test_db bash
+psql -U admin test_db < backups/test_db_backup.sql
